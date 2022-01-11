@@ -1,0 +1,362 @@
+
+
+<!--
+	=========================================================
+	* Argon Dashboard - v1.2.0
+	=========================================================
+	* Product Page: https://www.creative-tim.com/product/argon-dashboard
+	
+	
+	* Copyright  Creative Tim (http://www.creative-tim.com)
+	* Coded by www.creative-tim.com
+	
+	
+	
+	=========================================================
+	* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+	-->
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+      <meta name="author" content="Creative Tim">
+      <title>eFinanzas conversor</title>
+      <!-- Favicon -->
+      <link rel="icon" href="../static/img/brand/favicon.png" type="image/png">
+      <!-- Fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+      <!-- Icons -->
+      <link rel="stylesheet" href="../static/vendor/nucleo/css/nucleo.css" type="text/css">
+      <link rel="stylesheet" href="../static/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <!-- Page plugins -->
+      <!-- Argon CSS -->
+      <link rel="stylesheet" href="../static/css/argon.css?v=1.2.0" type="text/css">
+      <!-- Ale CSS -->
+      <link rel="stylesheet" href="../static/css/ale.css">
+    </head>
+    <body class="g-sidenav-show g-sidenav-pinned" style="min-height: 100vh;">
+      <!-- Sidenav -->
+      <!-- Main content -->
+      <div class="main-content" id="panel">
+        <!-- Topnav -->
+        <!-- Header -->
+        <!-- Header -->
+        <div class="header" style="background-color: rgb(19, 100, 164) !important;padding-top: 7em;">
+          <div class="container-fluid">
+            <div class="header-body">
+              <div class="row align-items-center py-4">
+              </div>
+              <!-- Card stats -->
+            </div>
+          </div>
+        </div>
+        <!-- Page content -->
+        <div class="container-fluid mt--6" style="background-color: #D9D9D9;">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="card-header bg-transparent pb-5" style="padding-top: inherit;margin-top: -1.5em;">
+                <div class="row justify-content-center">
+                  <div class="ct-page-title">
+                    <h1 class="ct-title" id="content" style="color:white; font-size:revert;">
+                      Referencia: Pizarra BROU
+                    </h1>
+                    <div class="avatar-group mt-3">
+                    </div>
+                  </div>
+                </div>
+                  <div class="row ">
+                    <div class="col">
+                    </div>
+                    <div class="col-6">
+                      <div class="col-xs-1" align="center">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="card card-stats">
+                              <!-- Card body -->
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Compra</h5>
+                                    <span class="h2 font-weight-bold mb-0" id="compra-usd">{{compra_usd}}</span>
+                                  </div>
+                                  <div class="col-auto">
+                                    <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                                      <i class="ni ni-bold-down"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span style="display:none;">
+                                  <p class="mt-3 mb-0 text-sm">
+                                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                                    <span class="text-nowrap" style="color:white">Since last month</span>
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card card-stats">
+                              <!-- Card body -->
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Venta</h5>
+                                    <span class="h2 font-weight-bold mb-0" id="venta-usd">{{venta_usd}}</span>
+                                  </div>
+                                  <div class="col-auto">
+                                    <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                                      <i class="ni ni-bold-up"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span style="display:none;">
+                                  <p class="mt-3 mb-0 text-sm">
+                                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                                    <span class="text-nowrap" style="color:white">Since last month</span>
+                                  </p>
+                                </span>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card card-stats">
+                              <!-- Card body -->
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Interbancario</h5>
+                                    <span class="h2 font-weight-bold mb-0" id="interbancario-usd">{{interbancario_usd}}</span>
+                                  </div>
+                                  <div class="col-auto">
+                                    <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                                      <i class="ni ni-bold-right"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span style="display:none;">
+                                  <p class="mt-3 mb-0 text-sm">
+                                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                                    <span class="text-nowrap" style="color:white">Since last month</span>
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-m-12 col-lg-4 col-xl-4">
+              <div class="card bg-secondary border-0">
+                <div class="row">
+                  <div class="col">
+                    <div class="card-body px-lg-5 py-lg-5">
+                      <div class="text-center text-muted mb-4">
+                        <div class="ct-page-title">
+                          <h1 class="ct-title" id="content">
+                            Calculadora
+                          </h1>
+                          <div class="avatar-group mt-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center text-muted mb-4">
+                        <div class="row justify-content-center" style="margin-top: 4em; margin-bottom: 1em">
+                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" onclick="ObjetivoVender()">Vender USD</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="ObjetivoPagar()">Comprar USD</a>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="pills-tabContent" style="padding-top: 2em;">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="ct-page-title" style="padding-bottom: 1em;">
+                              <h2 class="ct-title" id="content">
+                                ¿Cuánto querés vender?
+                              </h2>
+                              <div class="avatar-group mt-3">
+                              </div>
+                            </div>
+                            <form id="form-submit">
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="input-group input-group-merge input-group-alternative mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                      </div>
+                                      <input class="form-control" type="number" name="valor-a-convertir" id="valor-a-convertir" step="0.01" placeholder="Ingrese un valor" autocomplete="off" required="">
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="input-group input-group-merge input-group-alternative">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                      </div>
+                                      <select class="form-control" name="moneda-base" id="moneda-base">
+                                        <option name="input-moneda-0" value="UYU" disabled="" selected="">USD</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ct-page-title">
+                                <h3 class="ct-title" id="content">
+                                  <i class="bi bi-arrow-repeat"></i>
+                                </h3>
+                                <div class="avatar-group mt-3">
+                                </div>
+                              </div>
+                              <i class="bi bi-arrow-repeat"></i>
+                              <div class="row my-4">
+                              </div>
+                              <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-4" value="Validate" id="submit" style="font-size: 1.3em;">Convertir</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="ct-page-title" style="padding-bottom: 1em;">
+                              <h2 class="ct-title" id="content">
+                                ¿Cuánto querés comprar?
+                              </h2>
+                              <div class="avatar-group mt-3">
+                              </div>
+                            </div>
+                            <form id="form-submit2">
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="input-group input-group-merge input-group-alternative mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                      </div>
+                                      <input class="form-control" type="number" name="valor-a-convertir2" id="valor-a-convertir2" step="0.01" placeholder="Ingrese un valor" autocomplete="off" required="">
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="input-group input-group-merge input-group-alternative">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                      </div>
+                                      <select class="form-control" name="moneda-base" id="moneda-base">
+                                        <option name="input-moneda-0" value="UYU" disabled="" selected="">USD</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row my-4">
+                              </div>
+                              <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-4" value="Validate" id="submit" style="font-size: 1.3em;">Convertir</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="card">
+                <div class="card-header border-0">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h1 class="mb-0">Resultado</h1>
+                    </div>
+                    <div class="col text-right">
+                      <a href="#!" class="btn btn-sm btn-primary" style="display:none;">See all</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <!-- Projects table -->
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id="resultados">
+                      <tr id="cambio-e-finanzas-titulo" class="gradient-box">
+                        <th scope="row">
+                          <h4 class="ct-title" style="font-size: x-large;font-weight: bold;">Cotización e-Finanzas</h4>
+                        </th>
+                        <td id="cambio-e-finanzas" style=" font-size: xx-large;font-weight: bold;"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <h4 class="ct-title" id="total-a-recibir-titulo">Total a recibir <span style="color: grey">(en pesos uruguayos)</span></h4>
+                        </th>
+                        <td id="total-a-recibir" style=" font-size: 1.5em;"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <h4 class="ct-title" id="en-los-cambios-recibirias-titulo">En otros cambios recibirías</h4>
+                        </th>
+                        <td id="en-los-cambios-recibirias" style=" font-size: 1.5em;"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <h4 class="ct-title">
+                            Ganas
+                          </h4>
+                        </th>
+                        <td id="ganas" style=" font-size: 1.5em;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+        </div>
+      </div>
+      <!-- Argon Scripts -->
+      <!-- Custom -->
+      <script src="../static/js/ale.js"></script>
+      <!-- Core -->
+      <script src="../static/vendor/jquery/dist/jquery.min.js"></script>
+      <script src="../static/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../static/vendor/js-cookie/js.cookie.js"></script>
+      <script src="../static/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+      <script src="../static/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+      <!-- Optional JS -->
+      <script src="../static/vendor/chart.js/dist/Chart.min.js"></script>
+      <script src="../static/vendor/chart.js/dist/Chart.extension.js"></script>
+      <!-- Argon JS -->
+      <script src="../static/js/argon.js?v=1.2.0"></script><div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+      <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+      <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+      <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+      <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+      <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: medium none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: medium none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+      </div>
+    
+  
+  
+  </body>
+  </html>
+  
+  

@@ -1,0 +1,7 @@
+
+tr.gradient-box th td {
+    background-image: linear-gradient(to bottom, red 0%, blue 100%) !important; /* the gradient */
+    background-origin: border-box !important; /* set background to start from border-box */
+    border-spacing: 5px !important; /* space between each cell */
+    border: 0.05em solid transparent !important; /* optional */
+}
